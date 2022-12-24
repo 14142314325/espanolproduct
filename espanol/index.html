@@ -2,65 +2,25 @@
 <html lang="pt-br">
   <head>
     
-    <script>
-
-let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
-
-function getParams() {
-
-let t = "",
-
-e = window.top.location.href,
-
-r = new URL(e);
-
-if (null != r) {
-
-let a = r.searchParams.get("utm_source"),
-
-n = r.searchParams.get("utm_medium"),
-
-o = r.searchParams.get("utm_campaign"),
-
-m = r.searchParams.get("utm_term"),
-
-c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-
-}
-
-return t
-
-}! function() {
-
-var t = new URLSearchParams(window.location.search);
-
-t.toString() && document.querySelectorAll("a").forEach(function(e) {
-
-for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-
-})
-
-}();
-
-</script>
-
-    <!-- Meta Pixel Code -->
+    <!-- Facebook Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '483851260538386');
-  fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '868083857564204'); 
+fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=483851260538386&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=868083857564204&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
 
     <link rel="preload" href="https://scripts.converteai.net/34527e85-cac9-4f82-ae71-370b8f1dac56/players/63a07fbe190e36000a25b03a/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
